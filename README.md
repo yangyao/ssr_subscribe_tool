@@ -10,8 +10,8 @@
     add site from git
 
 ## build command
-
-    `php -S 127.0.0.1`
+    
+    `composer install && php -S 127.0.0.1`
 
 ## add node
 
