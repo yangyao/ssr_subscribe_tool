@@ -14,7 +14,7 @@ $app->get('/', function (\Slim\Http\Request $request, \Slim\Http\Response $respo
 
 $app->get('/add', function (\Slim\Http\Request $request, \Slim\Http\Response $response, $args) {
     $ssr = $request->getParam('node');
-    file_put_contents('node.txt',$ssr,FILE_APPEND);
+    file_put_contents('node.txt',$ssr.PHP_EOL,FILE_APPEND);
     return $response->getBody()->write('done !');
 });
 
