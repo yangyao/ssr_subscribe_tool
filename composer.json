@@ -1,0 +1,17 @@
+{
+    "name": "yangyao/ssr_subscribe_tool",
+    "description": "yet another ssr subscribe tool",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "yangyaoapp",
+            "email": "yangyaoapp@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "slim/slim": "^3.0",
+        "illuminate/support": "^5.8"
+    }
+}
