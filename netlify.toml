@@ -1,7 +1,7 @@
 [build]
 
-command = "composer install && php -S 0.0.0.0:5000"
-publish = "./"
+command = "composer install && php build.php"
+publish = "./dist"
 
 [context.production.environment]
 
