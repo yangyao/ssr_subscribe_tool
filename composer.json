@@ -12,6 +12,7 @@
     "minimum-stability": "dev",
     "require": {
         "slim/slim": "^3.0",
-        "illuminate/support": "^5.8"
+        "illuminate/support": "^5.8",
+        "guzzlehttp/guzzle": "^6.3"
     }
 }
