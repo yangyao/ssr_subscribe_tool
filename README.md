@@ -5,11 +5,8 @@
     `github.com/yangyao/ssr_subscribe_tool`
 
 ## deploy to netlify 
-    visit www.netlify.com 
-    login with your github account
-    add site from git
-    then you get the sub link
-    when you add a new ssr link it will auto update
+
+[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/yangyao/ssr_subscribe_tool)
 
 ## Deploy on your own server
     
