@@ -18,4 +18,13 @@ $app->get('/add', function (\Slim\Http\Request $request, \Slim\Http\Response $re
     return $response->getBody()->write('done !');
 });
 
+$app->get('/sub', function (\Slim\Http\Request $request, \Slim\Http\Response $response, $args) {
+    $client = new GuzzleHttp\Client(['verify'=>false]);
+    $link = $request->getParam('link');
+    $plain = base64_decode($client->get($link)->getBody());
+    file_put_contents('node.txt',PHP_EOL."## {$link} ".PHP_EOL,FILE_APPEND);
+    file_put_contents('node.txt',$plain.PHP_EOL,FILE_APPEND);
+    return $response->getBody()->write('done !');
+});
+
 $app->run();
