@@ -15,5 +15,9 @@
 
 ## add node
 
-    visit `{your netlify link }?node={your ssr link}`
+    visit `{your netlify link }/add?node={your ssr link}`
+    
+## add sub
+
+    visit `{your netlify link }/sub?link={your sub link}`
 
