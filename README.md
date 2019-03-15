@@ -23,14 +23,16 @@
 
 
 ## deploy on your own server
+
+### pre build 
+
+- update dependence use composer `composer install`
+- set up your env variable `ACCESS_TOKEN` and `DOMAIN` at .env files
+- start php buildin server `php -S 127.0.0.1`
+
+###  add node and subscribe
+
+- add node : visit `{your domain link }/add?node={your ssr link}`
+- add subscribe : visit `{your domain link }/sub?link={your sub link}`
     
-    `composer install && php -S 127.0.0.1`
-
-## add node
-
-    visit `{your domain link }/add?node={your ssr link}`
-    
-## add subscribe
-
-    visit `{your domain link }/sub?link={your sub link}`
 
