@@ -9,7 +9,7 @@ $dotEnv->load(__DIR__.'/.env');
 $domain = getenv('DOMAIN');
 $accessToken = getenv('ACCESS_TOKEN');
 
-if($accessToken && $domain){
+if(($accessToken && ($accessToken != '$ACCESS_TOKEN')) && ($domain && ($domain != '$DOMAIN'))){
     // add subscribe form data to node.txt
     $netlify = new \Yangyao\SSR\Netlify($accessToken,$domain);
     $site = $netlify->getSite();
