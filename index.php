@@ -9,7 +9,7 @@ $app->get('/', function (\Slim\Http\Request $request, \Slim\Http\Response $respo
 	$ssr = collect(explode(PHP_EOL,$plain))->filter(function($line){
 	    return \Illuminate\Support\Str::contains($line,"ssr://");
     });
-    return $response->getBody()->write(base64_encode($ssr));
+    return $response->getBody()->write(base64_encode(implode(PHP_EOL,$ssr->all())));
 });
 
 $app->get('/add', function (\Slim\Http\Request $request, \Slim\Http\Response $response, $args) {
